@@ -78,22 +78,23 @@ header .header-logo a{
 
 header .header-nav {
 	float: right;
-	margin-top: 40px;
+/*	margin-top: 40px;*/
 }
 
 header .header-nav .nav-item {
 	float: left;
+	display: inline-block;
 }
 
 header .header-nav .nav-item a {
-	margin-left: 60px;
-	line-height: 1.8;
+/*	margin-left: 60px;*/
+/*	line-height: 1.8;*/
 	font-size: 16px;
 }
 
 header .header-nav .nav-item a:hover {
-	text-decoration: underline;
-	color: #f3c549;
+	text-decoration: none;
+	color: #eee;
 }
 
 /*===========FOOTER===========*/
@@ -162,7 +163,7 @@ footer .footer-col .footer-logo {
 	font-family:'wc_mano_negra_btabold';
 }
 .index-banner-text p{
-	margin: 10px 20px;
+	margin: 20px 0px;
 	display: inline-block;
 }
 .line {
@@ -232,7 +233,7 @@ footer .footer-col .footer-logo {
 }
 .line {
 	margin: 15px 25px;
-	width: 200px;
+	width: 60px;
 	border-top: 1px solid #d2d2d2;
 }
 
@@ -348,3 +349,16 @@ footer .footer-col .footer-logo {
 }
 
 
+.nav {
+	float: right;
+	margin-top: 40px;
+	margin-right: -60px;
+}
+  .nav.default {
+    line-height: 35px;
+    height: 35px; }
+  .nav.twiceBorder, .nav.underline, .nav.overline {
+    line-height: 30px;
+    height: 30px; }
+  .nav a {
+    padding: 0 30px; }
