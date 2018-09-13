@@ -1,0 +1,350 @@
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, input, form, a, p {
+	margin: 0;
+	padding: 0;
+	font-family: Helvatica, Ariel, sans-serif;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+img {
+	border: none;
+	display: block;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: #3b3b3b;
+}
+
+.clearfloat {
+	zoom: 1;
+}
+
+.clearfloat:after {
+	display: block;
+	content: "";
+	visibility: hidden;
+	height: 1px;
+	clear: both;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 1100px;
+}
+
+/*---- wc_mano_negra -----*/
+@font-face {
+    font-family:'wc_mano_negra_btabold';
+    src: url('../fonts/wcmanonegrabta_bold_macroman/WCManoNegraBoldBta-webfont.eot');
+    src: url('../fonts/wcmanonegrabta_bold_macroman/WCManoNegraBoldBta-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/wcmanonegrabta_bold_macroman/WCManoNegraBoldBta-webfont.woff') format('woff'),
+         url('../fonts/wcmanonegrabta_bold_macroman/WCManoNegraBoldBta-webfont.ttf') format('truetype'),
+         url('../fonts/wcmanonegrabta_bold_macroman/WCManoNegraBoldBta-webfont.svg#wc_mano_negra_btabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*-----*/
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fa/fontawesome-webfont.eot');
+    src: url('../fonts/fa/fontawesome-webfont.woff') format('woff'),
+         url('../fonts/fa/fontawesome-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*=========HEADER=========*/
+header {
+	height: 100px;
+	width: auto;
+}
+
+header .header-logo {
+	float: left;
+	margin-top: 20px;
+}
+
+header .header-logo a{ 
+	height: 80px;
+	width: 390px;
+	background: url("../images/logo.png") no-repeat;
+}
+
+header .header-nav {
+	float: right;
+	margin-top: 40px;
+}
+
+header .header-nav .nav-item {
+	float: left;
+}
+
+header .header-nav .nav-item a {
+	margin-left: 60px;
+	line-height: 1.8;
+	font-size: 16px;
+}
+
+header .header-nav .nav-item a:hover {
+	text-decoration: underline;
+	color: #f3c549;
+}
+
+/*===========FOOTER===========*/
+
+footer {
+	margin-top: 100px;
+	padding-top: 100px;
+	width: auto;
+	height: 180px;
+	background: #3b3b3b;
+}
+
+footer .footer-col {
+	width: 250px;
+	float: left;
+	color: #eee;
+	margin-right: 60px;
+	line-height: 1.8;
+}
+
+footer .footer-col:last-child {
+	margin-left: -80px;
+	margin-right: 0px;
+}
+
+footer .footer-col a {
+	color: #eee;
+}
+
+footer .footer-col .footer-logo {
+	height: 42px;
+	width: 220px;
+	margin-top: -10px;
+	margin-bottom: 16px;
+	background: url("../images/footer-logo.png") no-repeat;
+}
+
+
+
+/*============BANNER===========*/
+
+.index-banner {
+	position: relative;
+	overflow: hidden;
+	margin-top: 6px;
+}
+
+.index-banner-bg {
+	min-height: 600px;
+	background: url("../images/banner-bg.jpg") no-repeat 0px 0px;
+	background-size: cover;
+}
+
+.index-banner .index-banner-text {
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	width: 1100px;
+	margin-left: -550px;
+	color: #eee;
+	text-align: center;
+}
+
+.index-banner .index-banner-text h1 {
+	font-size: 80px;
+	font-family:'wc_mano_negra_btabold';
+}
+.index-banner-text p{
+	margin: 10px 20px;
+	display: inline-block;
+}
+.line {
+	display: inline-block;
+	width: 40px;
+	border-top: 1px solid #eee;
+	margin-top: -2px;
+	vertical-align: middle;
+}
+
+/*===========MENU===========*/
+
+.index-menu {
+	position: relative;
+	border-top: 4px solid #f3c549;
+}
+
+.index-menu .menu-tip {
+	position: absolute;
+	top: -1px;
+	left: 50%;
+	margin-left: -70px;
+	width: 140px;
+	height: 70px;
+	background: #f3c549;
+	text-align: center;
+	line-height: 64px;
+	color: #eee;
+	font-size: 22px;
+}
+
+.index-menu .menu-tip:after {
+	position: absolute;
+	content: "";
+	right: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-bottom: 10px solid #fff;
+}
+
+.index-menu ul {
+	margin-top: 140px;
+	width: 1160px;
+}
+
+.index-menu .menu-item {
+	float: left;
+	width: 520px;
+	margin-top: 60px;
+	margin-right: 60px;
+	line-height: 1.5;
+	text-overflow: ellipsis;
+}
+
+.index-menu .menu-item .title, .index-menu .menu-item .line{
+	float: left;	
+}
+.index-menu .menu-item .price {
+	float: right;
+}
+.index-menu .menu-item .comment {
+	font-size: 12px;
+	color: #a2a2a2;
+}
+.line {
+	margin: 15px 25px;
+	width: 200px;
+	border-top: 1px solid #d2d2d2;
+}
+
+.index-lunchspec {
+	position: relative;
+	margin-top: 100px;
+}
+
+.index-panel-head {
+	padding-top: 50px;
+}
+
+.index-panel-head .panel-title {
+	float: left;
+	margin-right: 36px;
+	font-size: 22px;
+}
+.index-panel-head .panel-dots {
+	font-size: 0;
+	float: right;
+}
+
+.index-panel-head .panel-dots .dot {
+	display: inline-block;
+	margin-left: 12px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background: #9b9b9b;
+}
+
+.index-panel-head .panel-dots .active {
+	background: #fad390;
+}
+
+.index-panel-list {
+	position: relative;
+	margin-top: 60px;
+}
+
+.index-panel-list .panel-item {
+	float: left;
+	width: 230px;
+	margin-right: 60px;
+}
+
+.index-panel-list .panel-item:last-child {
+	margin-right: 0;
+}
+
+.index-panel-list .panel-item img {
+	width: 180px;
+	height: 216px;
+}
+.index-panel-list .panel-item h4 {
+	font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+/*============STARS==============*/
+
+.star-rating {
+	position: relative;
+	top: -50px;
+	left: -15px;
+  	font-family: 'FontAwesome';
+  	margin: 50px auto;
+}
+.star-rating > fieldset {
+ 	border: none;
+  	display: inline-block;
+}
+.star-rating > fieldset:not(:checked) > input {
+  	position: absolute;
+  	top: -9999px;
+  	clip: rect(0, 0, 0, 0);
+}
+.star-rating > fieldset:not(:checked) > label {
+  	float: right;
+  	width: 1em;
+  	padding: 0 .05em;
+  	overflow: hidden;
+  	white-space: nowrap;
+  	cursor: pointer;
+  	font-size: 150%;
+  	color: #16a085;
+}
+.star-rating > fieldset:not(:checked) > label:before {
+  	content: '\f006  ';
+}
+.star-rating > fieldset:not(:checked) > label:hover,
+.star-rating > fieldset:not(:checked) > label:hover ~ label {
+  	color: #1abc9c;
+  	text-shadow: 0 0 3px #1abc9c;
+}
+.star-rating > fieldset:not(:checked) > label:hover:before,
+.star-rating > fieldset:not(:checked) > label:hover ~ label:before {
+  	content: '\f005  ';
+}
+.star-rating > fieldset > input:checked ~ label:before {
+  	content: '\f005  ';
+}
+.star-rating > fieldset > label:active {
+  	position: relative;
+  	top: 2px;
+}
+
+
