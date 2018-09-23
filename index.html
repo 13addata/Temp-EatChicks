@@ -4,19 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Eatchicks</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="scripts/jquery-1.11.0.min.js"></script>
 </head>
 
 <body>
 	<!-- ==========HEADER========= -->
-	<header>
+	<header id="Home">
 		<div class="container clearfloat">
 			<div class="header-logo"><a href=""></a></div>
 			<nav class="nav default">
 			<ul class="header-nav clearfloat">
-				<li class="nav-item active"><a href="#">Home</a></li>
-				<li class="nav-item"><a href="#">Menu</a></li>
-				<li class="nav-item"><a href="#">Lunch Special</a></li>
-				<li class="nav-item"><a href="#">Gallery</a></li>
+				<li class="nav-item active"><a href="#Home">Home</a></li>
+				<li class="nav-item"><a href="#Menu">Menu</a></li>
+				<li class="nav-item"><a href="#Lunch">Lunch Special</a></li>
+				<li class="nav-item"><a href="#Gallery">Gallery</a></li>
 			</ul>
 			</nav>
 		</div>
@@ -37,7 +38,7 @@
 
 
 	<!-- ==========MANU=========== -->
-	<div class="index-menu">
+	<div class="index-menu" id="Menu">
 		<div class="menu-tip">Menu</div>
 		<div class="container">
 			<ul class="clearfloat">
@@ -110,8 +111,8 @@
 	</div>
 	<!-- ============MANU END============ -->
 
-
-	<div class="index-lunchspec">
+	<!-- =============LUNCH============== -->
+	<div class="index-lunchspec" id="Lunch">
 		<div class="container">
 			<div class="index-panel-head clearfloat">
 				<p class="panel-title">LUNCH SPECIALS</p> 
@@ -213,6 +214,11 @@
 	</div>
 
 	<div class="index-panel"></div>
+	<!-- =============LUNCH END=========== -->
+
+	<!-- ===========GALLERY=========== -->
+
+	<!-- ===========GALLERY END=========== -->
 
 	<!-- ===========FOOTER========= -->
 	<footer>
@@ -241,8 +247,9 @@
 			</div>
 		</div>
 	</footer>
+
+
 	<!-- ==========FOOTER END=========== -->
-	<script type="text/javascript" src="scripts/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="scripts/hoverSlippery.js"></script>
 	    <script>
 	      $(document).ready(function(){
